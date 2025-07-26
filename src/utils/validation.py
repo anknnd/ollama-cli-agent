@@ -170,8 +170,7 @@ class SystemValidator:
         """Check required directories exist and are writable"""
         dirs_to_check = [
             self.config.log_dir,
-            self.config.sessions_dir,
-            self.config.tool_dir if hasattr(self.config, 'tool_dir') else None
+            self.config.sessions_dir
         ]
         
         issues = []

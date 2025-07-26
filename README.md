@@ -95,7 +95,6 @@ The application uses `.agentrc` for configuration (YAML format):
 # .agentrc - Agent configuration file
 model: llama3.1:8b
 verbosity: debug
-tool_dir: plugins/
 log_dir: logs/
 sessions_dir: sessions/
 
@@ -117,7 +116,6 @@ export OLLAMA_MODEL="llama3.1:8b"
 export VERBOSITY="debug"
 export LOG_DIR="logs"
 export SESSIONS_DIR="sessions"
-export TOOL_DIR="plugins"
 ```
 
 ## 🔧 Available Tools

@@ -40,9 +40,6 @@ log_dir: logs/
 # Directory for conversation sessions
 sessions_dir: sessions/
 
-# Directory for additional tool plugins
-tool_dir: plugins/
-
 # ============================================================================
 # ADVANCED SETTINGS (Optional)
 # ============================================================================

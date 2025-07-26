@@ -24,7 +24,6 @@ class Config:
     # Directories
     log_dir: str = "logs"
     sessions_dir: str = "sessions"
-    tool_dir: str = "plugins"
     
     # Tool Settings
     tool_timeout: int = 10
@@ -44,7 +43,6 @@ class Config:
             verbosity=os.getenv('VERBOSITY', cls.verbosity),
             log_dir=os.getenv('LOG_DIR', cls.log_dir),
             sessions_dir=os.getenv('SESSIONS_DIR', cls.sessions_dir),
-            tool_dir=os.getenv('TOOL_DIR', cls.tool_dir),
             tool_timeout=int(os.getenv('TOOL_TIMEOUT', cls.tool_timeout)),
             max_tool_calls=int(os.getenv('MAX_TOOL_CALLS', cls.max_tool_calls)),
         )
