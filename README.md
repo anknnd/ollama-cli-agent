@@ -25,7 +25,7 @@ A powerful, extensible command-line interface for interacting with Ollama LLMs w
 1. **Clone the repository:**
    ```bash
    git clone <repository-url>
-   cd ollama-cli
+   cd ollama-cli-agent
    ```
 
 2. **Install dependencies:**
@@ -196,7 +196,6 @@ ollama-cli/
 │       └── sessions.py        # Session management
 ├── logs/                      # Application logs
 ├── sessions/                  # Conversation sessions
-├── docs/                      # Documentation
 ├── tests/                     # Test suite
 ├── main.py                    # CLI entry point
 ├── requirements.txt           # Python dependencies
