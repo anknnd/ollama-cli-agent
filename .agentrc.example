@@ -1,0 +1,77 @@
+# .agentrc.example - Agent configuration template
+# Copy this file to .agentrc and customize as needed
+
+# ============================================================================
+# LLM SETTINGS
+# ============================================================================
+
+# Ollama API endpoint
+ollama_url: http://localhost:11434/api/chat
+
+# Model to use (ensure it's pulled with: ollama pull model_name)
+model: llama3.1:8b
+
+# Request timeout in seconds
+timeout: 30
+
+# ============================================================================
+# AGENT BEHAVIOR
+# ============================================================================
+
+# Maximum conversation history to maintain
+max_history: 10
+
+# Logging verbosity: debug, info, warn, error
+verbosity: info
+
+# Maximum tool calls per request (prevents infinite loops)
+max_tool_calls: 5
+
+# Tool execution timeout in seconds
+tool_timeout: 10
+
+# ============================================================================
+# DIRECTORIES
+# ============================================================================
+
+# Directory for application logs
+log_dir: logs/
+
+# Directory for conversation sessions
+sessions_dir: sessions/
+
+# Directory for additional tool plugins
+tool_dir: plugins/
+
+# ============================================================================
+# ADVANCED SETTINGS (Optional)
+# ============================================================================
+
+# Custom system prompt prefix (optional)
+# system_prompt_prefix: "You are a specialized assistant for..."
+
+# Email configuration for communication tools (optional)
+# email:
+#   smtp_server: smtp.gmail.com
+#   smtp_port: 587
+#   username: your-email@gmail.com
+#   password: your-app-password
+
+# Tool-specific configurations (optional)
+# tools:
+#   search_engine: google  # google, bing, duckduckgo
+#   file_operations:
+#     default_encoding: utf-8
+#     max_file_size: 10485760  # 10MB
+
+# Performance optimizations (optional)
+# performance:
+#   enable_caching: true
+#   cache_ttl: 3600  # 1 hour
+#   max_concurrent_tools: 3
+
+# Security settings (optional)
+# security:
+#   allowed_commands: ["ls", "cat", "grep", "find"]
+#   blocked_paths: ["/etc", "/usr", "/var"]
+#   sandbox_mode: false
